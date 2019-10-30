@@ -91,7 +91,8 @@
     text-align: center;
     cursor: pointer;
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .scroll-down svg {
@@ -101,6 +102,9 @@
 svg  {
     overflow: hidden;
     vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    margin-left: 37px;
 }
 
 .scroll-down:after {
@@ -222,9 +226,11 @@ svg  {
     font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
+    width: 225px;
     letter-spacing: 1.2;
     font-family: 'Aleo', serif;
     text-decoration: none;
+    text-align: center;
 }
 .btn:after {
     content: '';
@@ -238,12 +244,15 @@ svg  {
       background-position: left top;
       background-size: contain;
 }
+
 .btn span {
     position: relative;
     z-index: 1;
 }
 
-
+.btn:hover {
+    border: 2px solid white;
+}
 
 
 .steps{
@@ -271,6 +280,7 @@ svg  {
     justify-content: center;
     margin: 0 auto 15px;
 }
+
 
 .step-item__title {
     font-size: 36px;
@@ -355,11 +365,13 @@ svg  {
     font-family: 'Josefin Sans', sans-serif;
 }
 .review__text {
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     line-height: 26px;
     color: #e8e8e8;
     text-indent: 30px;
     position: relative; 
+   
 }
 
 .review__text img {
@@ -403,6 +415,8 @@ svg  {
     margin-right: 24px; 
 }
 
+
+
 .footer__socials li:last-child {
     margin-right: 0; 
 }
@@ -411,6 +425,10 @@ svg  {
 .footer__socials a {
     display: block; 
     color: white;
+}
+
+.footer__socials a:hover {
+    color: #5474fd;
 }
 
 @media (max-width: 1199.98px) {
