@@ -231,6 +231,7 @@ svg  {
     font-family: 'Aleo', serif;
     text-decoration: none;
     text-align: center;
+    transition: .5s;
 }
 .btn:after {
     content: '';
@@ -251,7 +252,8 @@ svg  {
 }
 
 .btn:hover {
-    border: 2px solid white;
+    
+    transform: skew(-10deg);
 }
 
 
